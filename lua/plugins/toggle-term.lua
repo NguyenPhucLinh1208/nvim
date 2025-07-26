@@ -8,6 +8,6 @@ return {
 		})
 		-- quit terminal mode
 		vim.keymap.set('t', '<C-\\>', [[<C-\><C-N>:close<CR>]], { noremap = true, silent = true })
-		vim.keymap.set('n', '<C-\\>', ':ToggleTerm<CR>i', { noremap = true, silent = true })
+		vim.keymap.set('n', '<C-\\>', ':ToggleTerm<CR>n', { noremap = true, silent = true })
 	end
 }

@@ -42,3 +42,12 @@ vim.opt.termguicolors = true
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
+-- Tự động bỏ chế độ chỉ đọc khi mở file
+vim.api.nvim_create_autocmd({"BufReadPost", "BufEnter"}, {
+  pattern = "*",
+  callback = function()
+    if vim.bo.readonly then
+      vim.cmd("set noreadonly")
+    end
+  end,
+})
