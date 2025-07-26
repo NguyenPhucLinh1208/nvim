@@ -51,3 +51,6 @@ vim.api.nvim_create_autocmd({"BufReadPost", "BufEnter"}, {
     end
   end,
 })
+
+vim.keymap.set('n', 'd', '"_d', { noremap = true, silent = true })
+vim.keymap.set('v', 'd', '"_d', { noremap = true, silent = true })
