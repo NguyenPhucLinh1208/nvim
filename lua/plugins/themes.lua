@@ -1,14 +1,5 @@
 return {
 	{
-		"nyoom-engineering/oxocarbon.nvim",
-		lazy = false,
-		-- Không đặt oxocarbon làm mặc định nữa
-		-- config = function()
-		-- 	vim.opt.background = "dark" -- set this to dark or light
-		-- 	vim.cmd("colorscheme oxocarbon")
-		-- end,
-	},
-	{
 		"catppuccin/nvim",
 		name = "catppuccin",
 		lazy = false,
